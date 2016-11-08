@@ -1,0 +1,10 @@
+CREATE TABLE library {
+  isbn INT NOT NULL,
+  title VARCHAR(50),
+  available BOOLEAN,
+};
+
+INSERT INTO library
+VALUES  (001, 'Waking Up', True);
+
+SELECT * FROM library;

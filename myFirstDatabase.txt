@@ -1,0 +1,23 @@
+CREATE TABLE friends {
+  id INT NOT NULL,
+  name TEXT
+}:
+
+ALTER TABLE friends
+ADD name VARCHAR (20) NOT NULL,
+ADD age INT;
+
+INSERT INTO friends
+VALUES (1, 'Robin', 42, 1.72);
+
+INSERT INTO friends (id, name)
+VALUES (2, 'Nick');
+
+UPDATE friends
+SET age = 12
+WHERE name = 'Robin';
+
+DELETE FROM friends
+WHERE id = 2;
+
+UPDATE advertisement SET category = 'Television' WHERE name = 'Commerical'; 
